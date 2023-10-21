@@ -17,7 +17,7 @@ public class Main {
 
             System.out.println("Publication year: ");
             int inputPublicationYear = scanner.nextInt();
-            String inputTitleAgain = scanner.nextLine();
+            String keyboardBuffer = scanner.nextLine();
 
             bookArrayList.add(new Book(inputTitle, inputPages, inputPublicationYear));
 
@@ -35,11 +35,11 @@ public class Main {
             }
         } else if (getInformation.equals("pages")) {
             for (Book e : bookArrayList) {
-                System.out.println(e.getTitle());
+                System.out.println(e.getPages());
             }
         } else if (getInformation.equals("publication year")) {
             for (Book e : bookArrayList) {
-                System.out.println(e.getTitle());
+                System.out.println(e.getPublicationYear());
             }
         }
     }
